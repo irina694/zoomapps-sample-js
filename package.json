@@ -6,7 +6,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "prestart": "npm run build",
+    "prestart": "npm install",
     "start": "node app.js",
     "dev": "node scripts/dev.js",
     "build": "rollup -c",
@@ -26,9 +26,7 @@
     "helmet": "^5.0.2",
     "http-errors": "^2.0.0",
     "morgan": "~1.10.0",
-    "pug": "^3.0.2"
-  },
-  "devDependencies": {
+    "pug": "^3.0.2",
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/plugin-transform-runtime": "^7.17.0",
