@@ -49,7 +49,8 @@ router.get('/install', session, async (req, res) => {
 
     req.session.state = state;
     req.session.verifier = verifier;
-    res.redirect(url.href);
+    // res.redirect(url.href);
+    res.redirect(addURL); // From the Zoom Apps Activation Page
 });
 
 export default router;
