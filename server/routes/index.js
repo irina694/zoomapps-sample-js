@@ -46,7 +46,7 @@ router.get('/install', session, async (req, res) => {
         // AddURL: https://zoom.us/oauth/authorize?response_type=code&client_id=FXHTxaDxToqJ1JOxWwg7NQ&redirect_uri=https%3A%2F%2Fpowerful-lowlands-24092.herokuapp.com%2Fauth
 
         const addURL =
-            'https://zoom.us/oauth/authorize?response_type=code&client_id=FXHTxaDxToqJ1JOxWwg7NQ&redirect_uri=https%3A%2F%2Fpowerful-lowlands-24092.herokuapp.com%2Fauth';
+            '/auth?response_type=code&client_id=FXHTxaDxToqJ1JOxWwg7NQ&redirect_uri=https%3A%2F%2Fpowerful-lowlands-24092.herokuapp.com%2Fauth';
         console.log('Add URL (from Zoom Apps):', addURL);
 
         req.session.state = state;
