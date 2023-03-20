@@ -4,6 +4,7 @@
   "type": "module",
   "exports": "./server",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "prestart": "npm run build",
     "start": "node app.js",
@@ -64,5 +65,8 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
