@@ -10,4 +10,4 @@ export default cookieSession({
 });
 
 console.log('cookie session');
-console.log(cookieSession());
+console.log(cookieSession);
