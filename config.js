@@ -6,6 +6,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const config = process.env;
+
+console.log('config in Config.js:');
+console.log(config);
+
 const deps = [
     'ZM_CLIENT_ID',
     'ZM_CLIENT_SECRET',
