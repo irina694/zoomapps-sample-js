@@ -18,7 +18,7 @@ const deps = [
 ];
 
 config['ZM_CLIENT_ID'] = 'FXHTxaDxToqJ1JOxWwg7NQ';
-config['ZM_CLIENT_SECRET'] = '74KNBkpOQdGcuG-7wcNdCg';
+config['ZM_CLIENT_SECRET'] = 'TSjJSkh1Up2ryYqG2byrNxffkNBC64IB';
 config['ZM_REDIRECT_URL'] =
     'https://powerful-lowlands-24092.herokuapp.com/auth';
 config['APP_NAME'] = 'zoomapps-sample-js';
