@@ -19,9 +19,16 @@ const deps = [
 
 // Check that we have all our config dependencies
 let hasMissing = !config;
+console.log('hasMissing: ', hasMissing);
+
 for (const dep in deps) {
+    console.log('dep', dep);
+
     const conf = deps[dep];
     const str = config[conf];
+
+    console.log('conf: ', conf);
+    console.log('srt: ', str);
 
     if (!str || typeof str !== 'string') {
         console.error(`${conf} is required`);
