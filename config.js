@@ -17,6 +17,14 @@ const deps = [
     'SESSION_SECRET',
 ];
 
+config['ZM_CLIENT_ID'] = 'FXHTxaDxToqJ1JOxWwg7NQ';
+config['ZM_CLIENT_SECRET'] = '74KNBkpOQdGcuG-7wcNdCg';
+config['ZM_REDIRECT_URL'] =
+    'https://powerful-lowlands-24092.herokuapp.com/auth';
+config['APP_NAME'] = 'zoomapps-sample-js';
+config['SESSION_SECRET'] =
+    '61ac5b72d67e222ee8534fb211583ddb43bf3b5ebec9374693c144a12dec4e7f';
+
 // Check that we have all our config dependencies
 let hasMissing = !config;
 console.log('hasMissing: ', hasMissing);
