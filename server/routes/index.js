@@ -33,7 +33,20 @@ router.get('/', async (req, res, next) => {
  * this route is used when a user installs the app from the Zoom Client
  */
 router.get('/install', session, async (req, res) => {
+    console.log('Install the Zoom app');
+
     const { url, state, verifier } = getInstallURL();
+
+    console.log('URL:', url);
+    console.log('State: ', state);
+    console.log('verifier: ', verifier);
+
+    // AddURL: https://zoom.us/oauth/authorize?response_type=code&client_id=FXHTxaDxToqJ1JOxWwg7NQ&redirect_uri=https%3A%2F%2Fpowerful-lowlands-24092.herokuapp.com%2Fauth
+
+    const addURL =
+        'https://zoom.us/oauth/authorize?response_type=code&client_id=FXHTxaDxToqJ1JOxWwg7NQ&redirect_uri=https%3A%2F%2Fpowerful-lowlands-24092.herokuapp.com%2Fauth';
+    console.log('Add URL (from Zoom Apps):', addURL);
+
     req.session.state = state;
     req.session.verifier = verifier;
     res.redirect(url.href);
