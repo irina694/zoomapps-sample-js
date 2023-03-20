@@ -19,7 +19,8 @@ export async function start(app, port) {
         const bind =
             typeof addr === 'string'
                 ? `pipe ${addr}`
-                : `http://localhost:${addr.port}`;
+                : // : `http://localhost:${addr.port}`;
+                  `https://powerful-lowlands-24092.herokuapp.com:${addr.port}`;
         dbg(`Listening on ${bind}`);
     });
 
